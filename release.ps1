@@ -1,0 +1,2 @@
+dotnet publish Flow.Launcher.Plugin.PoiPoiClipboard -c Release -r win-x64
+Compress-Archive -LiteralPath Flow.Launcher.Plugin.PoiPoiClipboard/bin/Release/win-x64/publish -DestinationPath Flow.Launcher.Plugin.PoiPoiClipboard/bin/PoiPoiClipboard.zip -Force

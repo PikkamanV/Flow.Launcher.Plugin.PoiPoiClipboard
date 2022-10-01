@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.PoiPoiClipboard</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.PoiPoiClipboard</PackageId>
+    <Authors>PikkamanV</Authors>
+    <PackageProjectUrl>https://github.com/PikkamanV/Flow.Launcher.Plugin.PoiPoiClipboard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PikkamanV/Flow.Launcher.Plugin.PoiPoiClipboard</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
